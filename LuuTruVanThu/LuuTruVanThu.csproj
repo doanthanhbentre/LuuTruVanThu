@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17F05B73-E2D7-48FB-9AE8-07A5A3524875}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LuuTruVanThu</RootNamespace>
+    <AssemblyName>LuuTruVanThu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.XtraBars.v17.1" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="LibDataDB2">
+      <HintPath>..\..\LibDataDB2\bin\Debug\LibDataDB2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccess\NguoiNhan.cs" />
+    <Compile Include="DataAccess\CBCCVC.cs" />
+    <Compile Include="DataAccess\CoQuanBP.cs" />
+    <Compile Include="DataAccess\DeNghi.cs" />
+    <Compile Include="DataAccess\LinhVuc.cs" />
+    <Compile Include="DataAccess\LoaiVanBan.cs" />
+    <Compile Include="DataAccess\NguoiDung.cs" />
+    <Compile Include="DataAccess\SoLuu.cs" />
+    <Compile Include="DataAccess\TapTin.cs" />
+    <Compile Include="DataAccess\VanBan.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrmChangePassword.designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrmCreateUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrmCreateUsers.designer.cs">
+      <DependentUpon>FrmCreateUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThietLap\FrmCBCCVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThietLap\FrmCBCCVC.Designer.cs">
+      <DependentUpon>FrmCBCCVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThietLap\FrmCoQuanBP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThietLap\FrmCoQuanBP.Designer.cs">
+      <DependentUpon>FrmCoQuanBP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThietLap\FrmLoaiVanBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThietLap\FrmLoaiVanBan.Designer.cs">
+      <DependentUpon>FrmLoaiVanBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThietLap\FrmLinhVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThietLap\FrmLinhVuc.Designer.cs">
+      <DependentUpon>FrmLinhVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThietLap\FrmSoLuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThietLap\FrmSoLuu.Designer.cs">
+      <DependentUpon>FrmSoLuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VanBan\FrmChonCBCCVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VanBan\FrmChonCBCCVC.Designer.cs">
+      <DependentUpon>FrmChonCBCCVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VanBan\FrmDeNghi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VanBan\FrmDeNghi.Designer.cs">
+      <DependentUpon>FrmDeNghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VanBan\FrmListDeNghi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VanBan\FrmListDeNghi.Designer.cs">
+      <DependentUpon>FrmListDeNghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VanBan\FrmListVanBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VanBan\FrmListVanBan.Designer.cs">
+      <DependentUpon>FrmListVanBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VanBan\FrmVanBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VanBan\FrmVanBan.Designer.cs">
+      <DependentUpon>FrmVanBan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrmCreateUsers.resx">
+      <DependentUpon>FrmCreateUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ThietLap\FrmCBCCVC.resx">
+      <DependentUpon>FrmCBCCVC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThietLap\FrmCoQuanBP.resx">
+      <DependentUpon>FrmCoQuanBP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThietLap\FrmLoaiVanBan.resx">
+      <DependentUpon>FrmLoaiVanBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThietLap\FrmLinhVuc.resx">
+      <DependentUpon>FrmLinhVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThietLap\FrmSoLuu.resx">
+      <DependentUpon>FrmSoLuu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VanBan\FrmChonCBCCVC.resx">
+      <DependentUpon>FrmChonCBCCVC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VanBan\FrmDeNghi.resx">
+      <DependentUpon>FrmDeNghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VanBan\FrmListDeNghi.resx">
+      <DependentUpon>FrmListDeNghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VanBan\FrmListVanBan.resx">
+      <DependentUpon>FrmListVanBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VanBan\FrmVanBan.resx">
+      <DependentUpon>FrmVanBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1416573065_Password_protection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keys-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1416573149_User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
